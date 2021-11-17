@@ -20,7 +20,7 @@
 
 domain: kosukekawasaki.github.io
 title: スクラムマスターへの道のり
-email: kosuke.kawasaki@outlook.com 
+#email: kosuke.kawasaki@outlook.com 
 description: >- # this means to ignore newlines until "baseurl:"
   理想とするスクラムマスターを目指すための道のり。
   模索中の日々。
