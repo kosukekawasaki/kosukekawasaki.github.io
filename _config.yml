@@ -26,14 +26,36 @@ description: >- # this means to ignore newlines until "baseurl:"
   模索中の日々。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kosukekawasaki.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:categories/:title:output_ext
+permalink: /:title:output_ext
 twitter_username: KosukeKwsk
 github_username:  kosukekawasaki
 
+# url
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:title:output_ext
+
 # Build settings
-theme: minima
+theme: plainwhite
+remote_theme: samarsault/plainwhite-jekyll
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
+
+# theme
+plainwhite:
+  name: Kosuke Kawasaki
+  tagline: ScrumMaster
+  date_format: "%Y/%m/%d"
+
+  social_links:
+    twitter: KosukeKwsk
+    github: kosukekawasaki
+
+  portfolio_image:  "assets/avatar.jpg"
+  dark_mode: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
