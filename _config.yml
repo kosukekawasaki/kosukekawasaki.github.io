@@ -43,6 +43,7 @@ theme: plainwhite
 remote_theme: samarsault/plainwhite-jekyll
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # theme
 plainwhite:
