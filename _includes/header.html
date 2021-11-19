@@ -6,9 +6,8 @@
 <a href="{{ site.url }}" class="logo">{{ site.short_logo }}</a>
 {% endif %}
 <ul class="menu">
-<li class="menu__entry"><a href="{{ site.url }}">home</a></li>
-<li class="menu__entry"><a href="{{ site.url }}/projects">projects</a></li>
-<li class="menu__entry"><a href="{{ site.url }}/posts">posts</a></li>
+<li class="menu__entry"><a href="{{ site.url }}/about.html">about</a></li>
+<li class="menu__entry"><a href="{{ site.url }}/blog">blog</a></li>
 </ul>
 </div>
 <ul class="social-links">
@@ -20,6 +19,11 @@
 {% if site.author.github %}
 <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
 <i class="fab fa-github"></i>
+</a>
+{% endif %}
+{% if site.author.twitter %}
+<a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
+<i class="fab fa-twitter"></i>
 </a>
 {% endif %}
 {% if site.author.linkedin %}
