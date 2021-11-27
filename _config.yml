@@ -1,59 +1,48 @@
-title: スクラムマスターへの道のり # Shown in header on pages with full_logo: true
-short_logo: スクラムマスターへの道のり # Shown in header on all pages by default unless full_logo: true is set
-description: > # The description for your site
-    理想とするスクラムマスターを目指すための道のり。
-    模索中の日々。
-url: "https://kosukekawasaki.github.io" # Site base URL
+# Site settings
+remote_theme: chesterhow/tale
+title: Scrum Owl
+description: "スクラムの賢者（スクラムマスター）への道のり"
+#baseurl: "/tale"
+url: "https://kosukekawasaki.github.io"
+locale: ja_JP
 
+# Google Analytics
+#google_analytics: UA—XXXXXXXX-X
+
+# Author
 author:
   name: Kosuke Kawasaki
+  url: "https://kosukekawasaki.github.io"
   github: kosukekawasaki
-  email: 
-  twitter: KosukeKwsk # Twitter username, used for Twitter Card Analytics 
-  homepage: https://kosukekawasaki.github.io # This links to your name in post meta
+  twitter: KosukeKwsk
 
-disqus_name: # Setting this will turn on Disqus comments
-g_track_id: # Google Analytics tracking ID (e.g. UA-000000-2), setting this will turn on Google Analytics
+# Build settings
+markdown: kramdown
+include:
+  - _pages
 
-#markdown: kramdown
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed
 
-defaults: # Recommended defaults, you may set your own
-  -
-    scope:
-      path: _posts
-    values:
-      comments: true
-  -
-    scope:
-      path: pages/redirects
-    values:
-      layout: redirect
-      index: false
-      listed: false
-  -
-    scope:
-      path: pages/tags
-    values:
-      layout: tag
-      sitemap:
-        priority: 0.4
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks
+paginate: 5
+defaults:
   -
     scope:
       path: ""
       type: posts
     values:
       permalink: /blog/:title:output_ext
+      excerpt_separator: <!--more-->
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-  blanklines: true
-  profile: false
-  startings: [html, head, body]
-
-rss: false # RSS feed icon on or off
-dark_mode: true # Dark mode icon
-project_card_style: modal # Choose from masonry, modal, and flat
+# Excludes
+exclude: [ Gemfile, Gemfile.lock ]
