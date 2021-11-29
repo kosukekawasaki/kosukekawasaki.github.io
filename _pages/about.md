@@ -11,7 +11,7 @@ permalink: /about/
 * PMP
 * プロジェクトマネージャ
 
-ご連絡は、Twitter [@KosukeKwsk](https://twitter.com/KosukeKwsk) まで。
+ご連絡は、Twitter [@scrumowl](https://twitter.com/scrumowl) まで。
 
 ## Scrum Owl
 
