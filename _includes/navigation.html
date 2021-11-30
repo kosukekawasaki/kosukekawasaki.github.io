@@ -1,11 +1,15 @@
 <nav class="nav">
-  <div class="nav-container">
-    <a href="{{ site.baseurl }}/">
-      <h2 class="nav-title">{{ site.title }}</h2>
-    </a>
-    <ul>
-      <li><a href="{{ '/blog' | prepend: site.baseurl }}/">Blog</a></li>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-    </ul>
-  </div>
+<div class="nav-container">
+  <a href="{{ site.baseurl }}/">
+    <h2 class="nav-title">{{ site.title }}</h2>
+  </a>
+  <ul>
+    <li><a href="{{ '/blog' | prepend: site.baseurl }}/">Blog</a></li>
+    <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+    <li><a href="" id="dark-toggle-link" onclick="toggleDarkMode();"></a></li>
+  </ul>
+</div>
 </nav>
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script src="{{ "/assets/js/dark.js" | relative_url }}"></script>
