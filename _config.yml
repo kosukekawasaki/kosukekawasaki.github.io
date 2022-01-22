@@ -41,7 +41,7 @@ defaults:
       path: ""
       type: posts
     values:
-      permalink: /blog/:title:output_ext
+      permalink: /blog/:title
       excerpt_separator: <!--more-->
 
 # Excludes
