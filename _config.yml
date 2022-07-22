@@ -3,8 +3,10 @@ remote_theme: chesterhow/tale
 title: Scrum Owl
 description: "スクラムの賢者（スクラムマスター）への道のり"
 #baseurl: "/tale"
-url: "https://kosukekawasaki.github.io"
+url: "https://scrumowl.com"
 locale: ja_JP
+timezone: Asia/Tokyo
+future: true
 
 # Google Analytics
 #google_analytics: UA—XXXXXXXX-X
@@ -12,7 +14,7 @@ locale: ja_JP
 # Author
 author:
   name: Kosuke Kawasaki
-  url: "https://kosukekawasaki.github.io"
+  url: "https://scrumowl.com"
   github: kosukekawasaki
   twitter: KosukeKwsk
 
@@ -41,7 +43,7 @@ defaults:
       path: ""
       type: posts
     values:
-      permalink: /blog/:title:output_ext
+      permalink: /blog/:title
       excerpt_separator: <!--more-->
 
 # Excludes
